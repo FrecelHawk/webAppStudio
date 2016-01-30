@@ -17,7 +17,9 @@ function menu(){
 
 function set_panel(title,content){
     $('#panel .panel-title').text(title);
+/*
     $('#panel .panel-body').text(content);
+*/
 }
 
 menu();

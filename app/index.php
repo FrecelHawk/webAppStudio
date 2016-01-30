@@ -124,8 +124,7 @@
                         消息模块
                     </h3>
                 </div>
-                <div class="panel-body">
-                    <?php  include  'publishMessage2.html'?>
+                <div class="panel-body" >
                 </div>
             </div>
 
@@ -134,6 +133,20 @@
 
     </div>
 </div>
+
+<script>
+    $('#sendMessage').on('click',function(){
+        var $panel = $('#panel .panel-body');
+        $panel.load('publishMessage2.html');
+
+    });
+
+
+    $('#warningMessage').on('click',function(){
+             alert('警报信息');
+    });
+</script>
+
 
 <script>
 
@@ -226,5 +239,6 @@
 </script>
 
 <script src="../plugin/app/js/navigation_menu.js"></script>
+
 </body>
 </html>
