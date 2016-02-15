@@ -143,7 +143,8 @@
 
 
     $('#warningMessage').on('click',function(){
-             alert('警报信息');
+        var $panel = $('#panel .panel-body');
+        $panel.load('warningMessage.html');
     });
 </script>
 
