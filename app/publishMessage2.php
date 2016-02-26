@@ -13,7 +13,7 @@
         <div>
             <div id="toolbar">
                 <button id="remove" class="btn btn-danger" disabled>
-                    <i class="glyphicon glyphicon-remove"></i> Delete
+                    <i class="glyphicon glyphicon-remove"></i> 删除
                 </button>
             </div>
             <table id="table"
@@ -40,7 +40,7 @@
                     <th data-field="content" >内容</th>
                     <th data-field="send_time"  data-sortable="true">消息发送有效期</th>
                     <th data-field="update_time"  data-sortable="true">修改时间</th>
-                    <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">操作</th>
+                    <th data-field="operate" data-formatter="operateFormatter" data-align="center" data-events="operateEvents">操作</th>
                 </tr>
                 </thead>
             </table>
@@ -73,6 +73,28 @@
 
     </div>
 </div>
+
+
+
+<!-- dialog -->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">信息提示</h4>
+            </div>
+            <div class="modal-body">
+                <p>是否删除&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="confirm">确认</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
 <script>
 
@@ -185,14 +207,26 @@
           ].join('');
       }
 
+      var row_tmp;
       window.operateEvents = {
           'click .remove':function(e,value,row,index){
-              $table.bootstrapTable('remove',{
-                  field:'id',
-                  values:[row.id]
-              });
+              /* $table.bootstrapTable('remove',{
+               field:'id',
+               values:[row.id]
+               });*/
+              row_tmp =row;
+              $("#myModal").modal('show');
           }
       };
+
+      $("#confirm").on('click',function(){
+          $table.bootstrapTable('remove',{
+              field:'id',
+              values:[row_tmp.id]
+          });
+          $("#myModal").modal('hide');
+      });
+
 
       publishMessage_hide();
       table_show();

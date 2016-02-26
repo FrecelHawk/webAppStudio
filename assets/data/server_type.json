@@ -1,0 +1,27 @@
+[
+   {
+     "id":1,
+     "servicetype":"送餐"
+   },
+   {
+         "id":2,
+         "servicetype":"维修"
+   },
+   {
+       "id":3,
+       "servicetype":"送媒气"
+   },
+   {
+         "id":4,
+         "servicetype":"送餐"
+   },
+   {
+        "id":5,
+        "servicetype":"维修"
+   },
+   {
+        "id":6,
+        "servicetype":"送媒气"
+   }
+
+ ]

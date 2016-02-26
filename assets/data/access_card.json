@@ -1,0 +1,28 @@
+[
+  {
+    "id":1,
+    "householderPhone":"1359913812",
+    "householderName":"张三",
+    "cardnumber":"卡号1"
+  },{
+  "id":2,
+  "householderPhone":"1359913812",
+  "householderName":"张四",
+  "cardnumber":"卡号2"
+},{
+  "id":3,
+  "householderPhone":"1359913812",
+  "householderName":"赵五",
+  "cardnumber":"卡号3"
+},{
+  "id":4,
+  "householderPhone":"1359913812",
+  "householderName":"老六",
+  "cardnumber":"卡号4"
+},{
+  "id":5,
+  "householderPhone":"1359913812",
+  "householderName":"王七",
+  "cardnumber":"卡号5"
+}
+]

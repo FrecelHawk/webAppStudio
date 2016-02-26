@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "devicetype": "室内机",
+    "serverip": "192.168.1.111",
+    "pnetworkip": "119.122.246.78",
+    "ip": "192.168.1.8",
+    "gatewayip": "192.168.1.1",
+    "netmask": "255.255.255.0",
+    "dns1": "192.168.1.1",
+    "dns2": "192.168.1.2",
+    "sip": "#####",
+    "onlinestate": "online",
+    "safetystate": "shielding",
+    "lockstate": "locking"
+  },
+  {
+    "id": 2,
+    "devicetype": "门口机",
+    "serverip": "192.168.1.111",
+    "pnetworkip": "119.122.246.78",
+    "ip": "192.168.1.8",
+    "gatewayip": "192.168.1.1",
+    "netmask": "255.255.255.0",
+    "dns1": "192.168.1.1",
+    "dns2": "192.168.1.2",
+    "sip": "#####",
+    "onlinestate": "unknown",
+    "safetystate": "cancel",
+    "lockstate": "locking"
+  },
+  {
+    "id": 3,
+    "devicetype": "中心机",
+    "serverip": "192.168.1.111",
+    "pnetworkip": "119.122.246.78",
+    "ip": "192.168.1.8",
+    "gatewayip": "192.168.1.1",
+    "netmask": "255.255.255.0",
+    "dns1": "192.168.1.1",
+    "dns2": "192.168.1.2",
+    "sip": "#####",
+    "onlinestate": "unknown",
+    "safetystate": "cancel",
+    "lockstate": "locking"
+  }
+]

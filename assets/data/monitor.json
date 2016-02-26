@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "deviceid": "设备1",
+    "model": "型号1",
+    "name": "XX摄像机",
+    "ip": "198.168.1.1",
+    "user": "userName",
+    "password": "password"
+  },
+  {
+    "id": 2,
+    "deviceid": "设备2",
+    "model": "型号2",
+    "name": "XX摄像机",
+    "ip": "198.168.1.2",
+    "user": "userName",
+    "password": "password"
+  },
+  {
+    "id": 3,
+    "deviceid": "设备3",
+    "model": "型号3",
+    "name": "XX摄像机",
+    "ip": "198.168.1.3",
+    "user": "userName",
+    "password": "password"
+  },
+  {
+    "id": 4,
+    "deviceid": "设备4",
+    "model": "型号4",
+    "name": "XX摄像机",
+    "ip": "198.168.1.4",
+    "user": "userName",
+    "password": "password"
+  }
+]

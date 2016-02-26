@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "servicetypeid": "送餐",
+    "servicecontent": "服务内容",
+    "servicemanid": "张三",
+    "serviceevaluate": "服务评价",
+    "opendoortime": "2016年01月11 06:30"
+  },
+  {
+    "id": 2,
+    "servicetypeid": "修空调",
+    "servicecontent": "服务内容",
+    "servicemanid": "赵五",
+    "serviceevaluate": "服务评价",
+    "opendoortime": "2016年01月11 05:30"
+  },
+  {
+    "id": 3,
+    "servicetypeid": "送媒气",
+    "servicecontent": "服务内容",
+    "servicemanid": "小陈",
+    "serviceevaluate": "服务评价",
+    "opendoortime": "2016年01月11 04:30"
+  }
+]

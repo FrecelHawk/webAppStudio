@@ -2,244 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="import" href="table_adduction.html">
-    <title>Title</title>
-</head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../plugin/bootstrap-3.3.5/css/bootstrap.css">
+    <link rel="stylesheet" href="../plugin/bootstrap-login/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../plugin/bootstrap-login/css/form-elements.css">
+    <link rel="stylesheet" href="../plugin/bootstrap-login/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<!--    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+    <![endif]-->
+
+
+</head>
+<?php
+    require "header.php";
+php?>
 
 <body>
+<!-- Top content -->
+<div class="top-content">
 
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span2">
-            <!--Sidebar content-->
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        分类
-                    </h3>
-                </div>
-                <div class="panel-body">
-                    <div id="treeview-checkable" class=""></div>
-                </div>
-            </div>
-        </div>
-        <div class="span10">
-            <!--navigation menu-->
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#">小区物业</a>
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div id="login_layout" class="col-sm-5" style="display: block;">
+
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Login to our site</h3>
+                                <p>Enter username and password to log on:</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
                         </div>
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul id="meun" class="nav navbar-nav" >
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息管理 <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" id="warningMessage">警报信息</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">发布信息</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">设备管理 <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" id="warningMessage">室内机</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="warningMessage">中心机</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" >门口机</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">设备重启</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">设备升级</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">服务管理 <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" id="warningMessage">服务绑定</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">服务人员</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">服务信息</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">监控管理 <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" id="warningMessage">摄像头配置</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">实时监控</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">记录查询 <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" id="warningMessage">报警记录</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">刷卡记录</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">已发信息</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">呼叫记录</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">门禁记录</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统设置  <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#" id="warningMessage">查看版本</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">密码修改</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" >客服电话</a> </li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">关于</a></li>
-                            </ul>
+                        <div class="form-bottom">
+                            <form role="form" action="" method="post" class="login-form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-username">Username</label>
+                                    <input type="text" name="form-username" placeholder="账号"
+                                           class="form-username form-control" id="form-username">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-password">Password</label>
+                                    <input type="password" name="form-password" placeholder="密码"
+                                           class="form-password form-control" id="form-password">
+                                </div>
+                                <button type="submit" class="btn">登录</button>
+                            </form>
+                        </div>
                     </div>
 
-                  </div>
-                </div>
-            </nav>
+                  <!--  <div class="social-login">
+                        <h3>...or login with:</h3>
+                        <div class="social-login-buttons">
+                            <a class="btn btn-link-2" href="#">
+                                <i class="fa fa-facebook"></i> Facebook
+                            </a>
+                            <a class="btn btn-link-2" href="#">
+                                <i class="fa fa-twitter"></i> Twitter
+                            </a>
+                            <a class="btn btn-link-2" href="#">
+                                <i class="fa fa-google-plus"></i> Google Plus
+                            </a>
+                        </div>
+                    </div>-->
 
-            <!-- panle-->
-            <div id="panel" class="panel panel-default">
-                <div class="panel-heading">
-                    <h3  class="panel-title">
-                        消息模块
-                    </h3>
                 </div>
-                <div class="panel-body" >
+
+
+                <div id="register_layout" style="display: none;" class="col-sm-5">
+
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>Sign up now</h3>
+                                <p>Fill in the form below to get instant access:</p>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <form role="form" action="" method="post" class="registration-form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-first-name">账号</label>
+                                    <input type="text" name="form-first-name" placeholder="账号"
+                                           class="form-first-name form-control" id="form-first-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-last-name">密码</label>
+                                    <input type="text" name="form-last-name" placeholder="密码"
+                                           class="form-last-name form-control" id="form-last-name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="form-email">确认密码</label>
+                                    <input type="text" name="form-email" placeholder="确认密码"
+                                           class="form-email form-control" id="form-email">
+                                </div>
+
+                                <div class="form-group">
+                                        <input select-address p="p" c="c" a="a" d="d" ng-model="xxx" placeholder="地址" type="text"
+                                               class="form-control"/>
+                                </div>
+                                <button type="submit" class="btn" id="register_btn">注册</button>
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-
         </div>
-
     </div>
+
 </div>
 
-<script>
-    $('#sendMessage').on('click',function(){
-        var $panel = $('#panel .panel-body');
-        $panel.load('publishMessage2.html');
+<?php
+    require  "footer2.html";
+php?>
 
+
+<!-- Javascript -->
+<script src="../plugin/jquery-2.1.1/jquery.js"></script>
+<script src="../plugin/bootstrap-3.3.5/js/bootstrap.js"></script>
+<script src="../plugin/bootstrap-login/js/jquery.backstretch.min.js"></script>
+<script src="../plugin/bootstrap-login/js/scripts.js"></script>
+<script src="../plugin/address-plugin/selectAddress2.js" type="text/javascript"></script>
+<script src="../plugin/address-plugin/index.js" type="text/javascript"></script>
+
+<script>
+     function showLogin(){
+         $("#login_layout").show();
+         $("#register_layout").hide();
+     }
+
+     function showRegister(){
+          $("#login_layout").hide();
+          $("#register_layout").show();
+     }
+
+    $('#login').on('click',function(){
+          showLogin();
     });
 
+    $('#register').on('click',function(){
+        showRegister();
+    });
 
-    $('#warningMessage').on('click',function(){
-        var $panel = $('#panel .panel-body');
-        $panel.load('warningMessage.html');
+    $('#register_layout button[type="submit"]').on('click',function(){
+          alert("注册");
+         window.location.href="main.php";
+     });
+
+    $('#login_layout button[type="submit"]').on('click',function(){
+        alert("登录");
+        window.location.href="main.php";
     });
 </script>
 
 
-<script>
-
-    var defaultData = [
-        {
-            text: '二期',
-            href: '#parent1',
-            tags: ['4'],
-            nodes: [
-                {
-                    text: '一区',
-                    href: '#child1',
-                    tags: ['2'],
-                    nodes: [
-                        {
-                            text: '1栋',
-                            href: '#grandchild1',
-                            tags: ['1'],
-                            nodes: [{
-                                text: '1单元',
-                                href: '#unit',
-                                tags: [1],
-                                nodes: [{
-                                    text: '2层',
-                                    href: '#layer',
-                                    tags: [1],
-                                    nodes: [{
-                                        text: '101室',
-                                        href: '#room',
-                                        tags: [0],
-                                        nodes:[{
-                                            text:'1房号',
-                                            href:'#room',
-                                            targs:[0]
-                                        }]
-                                    }]
-                                }]
-                            }]
-                        },
-                        {
-                            text: '2栋',
-                            href: '#grandchild2',
-                            tags: ['0']
-                        }
-                    ]
-                },
-                {
-                    text: 'Child 2',
-                    href: '#child2',
-                    tags: ['0']
-                }
-            ]
-        },
-        {
-            text: 'Parent 2',
-            href: '#parent2',
-            tags: ['0']
-        },
-        {
-            text: 'Parent 3',
-            href: '#parent3',
-            tags: ['0']
-        },
-        {
-            text: 'Parent 4',
-            href: '#parent4',
-            tags: ['0']
-        },
-        {
-            text: 'Parent 5',
-            href: '#parent5',
-            tags: ['0']
-        }
-    ];
-
-    var $checkableTree = $('#treeview-checkable').treeview({
-        data: defaultData,
-        showIcon: true,
-        showCheckbox: true,
-        onNodeChecked: function (event, node) {
-            $('#checkable-output').prepend('<p>' + node.text + ' was checked</p>');
-        },
-        onNodeUnchecked: function (event, node) {
-            $('#checkable-output').prepend('<p>' + node.text + ' was unchecked</p>');
-        }
-    });
-
-
-
-</script>
-
-<script src="../plugin/app/js/navigation_menu.js"></script>
+<!--[if lt IE 10]>
+<script src="../plugin/bootstrap-login/js/placeholder.js"></script>
+<![endif]-->
 
 </body>
+
 </html>

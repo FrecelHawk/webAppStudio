@@ -2,7 +2,7 @@
 <html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
-    <link rel="import" href="loading.html">
+    <link rel="import" href="loading.php">
     <title>Title</title>
 </head>
 <body>
