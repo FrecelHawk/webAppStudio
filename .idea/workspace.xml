@@ -1,109 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1b5bf5d-d190-41ce-9471-b25229fb9f82" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/backgrounds/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/access_card.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/account_info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/devices.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/devices_config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/devices_list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/main.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/monitor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/phone_bind_user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/server_info.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/server_personnel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/server_type.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/warningMessage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/websocket.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/access_card.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/access_record.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/devices_list.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/monitor.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/phone_bind_user.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/server_info.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/server_personnel.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/server_type.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/data/test.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/app/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/app/js/websocket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-3.3.5/js/file-input.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-form/form-repsonsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-form/form.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/css/form-elements.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/js/jquery-1.11.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/js/jquery.backstretch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/js/jquery.backstretch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/js/placeholder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-login/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-switch-3/css/bootstrap-switch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-switch-3/css/bootstrap-switch.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-switch-3/css/highlight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-switch-3/js/bootstrap-switch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-switch-3/js/bootstrap-switch.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bootstrap-switch-3/js/highlight.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/bootstrapdemo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/dialog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/testPhp.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/B.html" afterPath="$PROJECT_DIR$/app/B.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/loading.html" afterPath="$PROJECT_DIR$/app/loading.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/locationdemo.html" afterPath="$PROJECT_DIR$/app/locationdemo.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/login.html" afterPath="$PROJECT_DIR$/app/login.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/navigation.html" afterPath="$PROJECT_DIR$/app/navigation.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/publishMessage.html" afterPath="$PROJECT_DIR$/app/publishMessage.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/publishMessage2.html" afterPath="$PROJECT_DIR$/app/publishMessage2.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/table_adduction.html" afterPath="$PROJECT_DIR$/app/table_adduction.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/table_demo.html" afterPath="$PROJECT_DIR$/app/table_demo.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/update_data.html" afterPath="$PROJECT_DIR$/app/update_data.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/video.html" afterPath="$PROJECT_DIR$/app/video.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/warningMessage.html" afterPath="$PROJECT_DIR$/app/access_record.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+    <list default="true" id="b1b5bf5d-d190-41ce-9471-b25229fb9f82" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/footer.php" afterPath="$PROJECT_DIR$/app/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/header.php" afterPath="$PROJECT_DIR$/app/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.php" afterPath="$PROJECT_DIR$/app/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/app/js/navigation_menu.js" afterPath="$PROJECT_DIR$/plugin/app/js/navigation_menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/app/js/table-load.js" afterPath="$PROJECT_DIR$/plugin/app/js/table-load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/bootstrap-3.1.1/less/forms.less" afterPath="$PROJECT_DIR$/plugin/bootstrap-3.1.1/less/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/bootstrap-3.3.5/css/bootstrap.css" afterPath="$PROJECT_DIR$/plugin/bootstrap-3.3.5/css/bootstrap.css" />
     </list>
     <ignored path="webApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -486,7 +385,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455515923358</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1456479211237</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456479211237</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
