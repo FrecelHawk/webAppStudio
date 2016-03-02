@@ -25,7 +25,7 @@ function set_panel(title){
 var panel = $('#panel .panel-body');
 
 $('#sendMessage').on('click',function(){
-    panel.load('publishMessage2.php');
+    panel.load('publishMessage.php');
 
 });
 
@@ -72,8 +72,8 @@ $('#access_card').on('click',function(){
 $('#account_info').on('click',function(){
     panel.load('account_info.php');
 });
-/*    panel.load('publishMessage2.php');*/
-panel.load('phone_bind_user.php');
+    panel.load('publishMessage.php');
+/*panel.load('phone_bind_user.php');*/
 
 menu();
 

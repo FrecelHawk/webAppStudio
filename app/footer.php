@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="loading.html">
     <style>
         footer {
             color:#777;
@@ -111,4 +106,3 @@
         </div>
     </section>
 </footer>
-</html>

@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
-    <script src="../plugin/angularjs/js/angular.js"></script>
+    <script src="../../plugin/angularjs/js/angular.js"></script>
     <title>Title</title>
 </head>
 <body>

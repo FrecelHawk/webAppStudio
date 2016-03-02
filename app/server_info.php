@@ -23,6 +23,7 @@
            data-show-columns="true"
            data-url="../assets/data/server_info.json"
            data-search="true"
+           data-detail-formatter="detailFormatter"
            data-show-refresh="true"
            data-show-toggle="true"
            data-pagination="true"

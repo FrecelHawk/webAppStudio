@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="table_adduction.html">
-    <title>Title</title>
-</head>
-<body>
 <div>
     <div id="toolbar">
         <button id="remove" class="btn btn-danger" disabled>
@@ -144,5 +136,3 @@
 
 </script>
 <script src="../plugin/app/js/table-load.js"></script>
-</body>
-</html>

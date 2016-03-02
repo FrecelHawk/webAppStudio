@@ -7,7 +7,7 @@
 <body>
 <video width="320" height="240" controls="controls">
     Your browser does not support the video
-    <source src="../assets/video/test.flv">
+    <source src="../../assets/video/test.flv">
 </video>
 
 <!--<object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" codebase="http://download.videolan.org/pub/videolan/vlc/last/win32/axvlc.cab" id="vlc">

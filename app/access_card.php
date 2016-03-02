@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="import" href="table_adduction.html">
-</head>
-<body>
-
 <div>
     <div id="toolbar">
         <button id="addition" class="btn btn-primary" >
@@ -86,6 +77,26 @@
         $modal.modal('hide');
     });
 
+  function detailFormatter(index,row){
+      var html = [];
+      var title = {
+          'cardnumber': '卡号',
+          'householderPhone': '住户手机',
+          'householderName': '住户姓名',
+      };
+      $.each(row,function(key,value){
+          var tmp = key;
+          if(key==='0') return;
+          if(key==='cardnumber')tmp = title.cardnumber;
+          if(key==='householderPhone')tmp = title.householderPhone;
+          if(key==='householderName') tmp = title.householderName;
+
+          html.push('<p><b>'+tmp+':</b>'+value+'</p>');
+      });
+
+      return html.join('');
+  }
+
+
 </script>
 <script src="../plugin/app/js/table-load.js"></script>
-</html>

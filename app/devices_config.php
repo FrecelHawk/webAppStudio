@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="loading.html">
     <style>
         .btn-file {
             position: relative;
@@ -24,15 +19,13 @@
             display: block;
         }
     </style>
-</head>
-<body>
 
     <form class="form-horizontal">
 <!--            <div id="legend" class="">
                 <legend class="">设备配置</legend>
             </div>-->
 
-        <div id="toolbar" style="margin-top: 20px;">
+        <div id="toolbar" style="margin-top: 20px;margin-bottom:20px;">
             <button id="devices" class="btn btn-primary" disabled>
                 <i class="glyphicon glyphicon-plus" href="#"></i> 添加配置
             </button>
@@ -112,5 +105,3 @@
             </div>
 
     </form>
-</body>
-</html>

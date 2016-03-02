@@ -3,7 +3,7 @@
 <head>
     <title>Bootstrap Table Examples</title>
     <link rel="import" href="loading.html">
-    <link rel="stylesheet" href="../plugin/bootstrap-table/css/bootstrap-table.css"/>
+    <link rel="stylesheet" href="../../plugin/bootstrap-table/css/bootstrap-table.css"/>
     <link rel="stylesheet" href="//rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
 </head>
 <body>

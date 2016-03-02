@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="table_adduction.html">
-</head>
-<body>
 <div>
     <div id="toolbar">
         <button id="remove" class="btn btn-danger" disabled>
@@ -47,7 +40,7 @@
             <th data-field="onlinestate">在线状态</th>
             <th data-field="safetystate">安防状态</th>
             <th data-field="lockstate">锁状态</th>
-            <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">操作
+            <th data-field="operate" data-align ="center"  data-formatter="operateFormatter" data-events="operateEvents">操作
         </tr>
         </thead>
     </table>
@@ -101,13 +94,13 @@
 
     function  operateFormatter(value,row,index){
         return [
-            '<a class="remove" href="javascript:void(0)"  style="margin-left: 10px;" title="删除">',
+            '<a class="remove" href="javascript:void(0)" style="margin-left: 10px;" title="删除">',
             '<i class="glyphicon glyphicon-remove"></i>',
             '</a>',
-            '<a class="upgrade" href="javascript:void(0)" style="margin-left: 10px;" title="更新">',
+            '<a class="upgrade" href="javascript:void(0)" style="margin-left: 10px;"   title="更新">',
             '<i class=" glyphicon glyphicon-refresh"></i>',
             '</a>',
-            '<a class="reboot" href="javascript:void(0)" style="margin-left: 10px;" title="重启">',
+            '<a class="reboot" href="javascript:void(0)"   style="margin-left: 10px;"  title="重启">',
             '<i class="glyphicon glyphicon-plus"></i>',
             '</a>'
         ].join('');
@@ -166,5 +159,3 @@
     };
 </script>
 <script src="../plugin/app/js/table-load.js"></script>
-</body>
-</html>

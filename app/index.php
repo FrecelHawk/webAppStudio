@@ -128,7 +128,7 @@ php?>
 </div>
 
 <?php
-    require  "footer2.html";
+    require  "footer.php";
 php?>
 
 
@@ -137,7 +137,8 @@ php?>
 <script src="../plugin/bootstrap-3.3.5/js/bootstrap.js"></script>
 <script src="../plugin/bootstrap-login/js/jquery.backstretch.min.js"></script>
 <script src="../plugin/bootstrap-login/js/scripts.js"></script>
-<script src="../plugin/address-plugin/selectAddress2.js" type="text/javascript"></script>
+<script src="../plugin/angularjs/js/angular.js"></script>
+<script src="../plugin/address-plugin/selectAddress.js" type="text/javascript"></script>
 <script src="../plugin/address-plugin/index.js" type="text/javascript"></script>
 
 <script>

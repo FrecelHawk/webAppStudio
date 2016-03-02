@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="table_adduction.html">
-</head>
-<body>
 
 <div>
 
@@ -212,9 +205,6 @@
         $deleteBind.modal('hide');
     });
 
-    $('.bootstrap-switch input[type="checkbox"]').bootstrapSwitch();
 
 </script>
-</body>
 <script src="../plugin/app/js/table-load.js"></script>
-</html>

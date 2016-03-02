@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="table_adduction.html">
-</head>
-<body>
 
 <div>
     <div id="toolbar">
@@ -177,5 +170,3 @@
     });
 </script>
 <script src="../plugin/app/js/table-load.js"></script>
-</body>
-</html>

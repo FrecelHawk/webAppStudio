@@ -54,7 +54,7 @@
 </body>
 
 <script src="../plugin/address-plugin/selectAddress2.js" type="text/javascript"></script>
-<script src="../plugin/address-plugin/index.js" type="text/javascript"></script>
+<script src="../../plugin/address-plugin/index.js" type="text/javascript"></script>
 
 <script>
    $("#cancel").on('click',function(){
@@ -62,7 +62,7 @@
    });
 
     $("#register").on('click',function(){
-        window.location.href ='../app/index.php';
+        window.location.href ='../index.php';
     });
 
 </script>

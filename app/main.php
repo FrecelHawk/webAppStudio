@@ -12,28 +12,13 @@
     <link rel="stylesheet" href="../plugin/bootstrap-3.3.5/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" href="../plugin/bootstrap-3.3.5/css/bootstrap-treeview.css"/>
     <link rel="stylesheet" href="../plugin/app/css/main.css"/>
-    <script src="../plugin/jquery-2.1.1/jquery.js"></script>
-    <script src="../plugin/less/less.js"></script>
-    <script src="../plugin/angularjs/js/angular.js"></script>
-    <script src="../plugin/bootstrap-3.3.5/js/bootstrap.js"></script>
-    <script src="../plugin/bootstrap-3.3.5/js/bootstrap-treeview.js"></script>
-    <script src="../plugin/bootstrap-3.3.5/js/modal.js"></script>
-    <script src="../plugin/bootstrap-3.3.5/js/transition.js"></script>
-    <script src="../plugin/bootstrap-3.3.5/js/file-input.js"></script>
+
 
     <link rel="stylesheet" href="../plugin/bootstrap-table/css/bootstrap-table.css"/>
     <link rel="stylesheet" href="../plugin/bootstrap-table/css/rawgit-bootstrap-editable.css"/>
     <link rel="stylesheet" href="../plugin/bootstrap-switch-3/css/bootstrap-switch.css"/>
 
 
-
-    <script src="../plugin/bootstrap-table/js/bootstrap-table.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-table/extensions/export/bootstrap-table-export.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-table/js/rawgit-tableExport.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-table/extensions/editable/bootstrap-table-editable.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-table/js/rawgit-editable.js"  type="text/javascript" ></script>
-    <script src="../plugin/bootstrap-table/js/bootstrap-table-zh-CN.js"  type="text/javascript" ></script>
-    <script src="../plugin/bootstrap-switch-3/js/bootstrap-switch.js" type="text/javascript"></script>
 
 </head>
 <?php
@@ -44,7 +29,7 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span2">
+        <div class="span3">
             <!--Sidebar content-->
             <div class="panel panel-default" style="height: 740px;">
                 <div class="panel-heading">
@@ -60,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <div class="span10">
+        <div class="span9">
             <!--navigation menu-->
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
@@ -169,10 +154,26 @@
 <?
    require "footer.php"
 ?>
-<script>
+<script src="../plugin/jquery-2.1.1/jquery.js"></script>
+<script src="../plugin/less/less.js"></script>
+<script src="../plugin/angularjs/js/angular.js"></script>
+<script src="../plugin/bootstrap-3.3.5/js/bootstrap.js"></script>
+<script src="../plugin/bootstrap-3.3.5/js/bootstrap-treeview.js"></script>
+<script src="../plugin/bootstrap-3.3.5/js/modal.js"></script>
+<script src="../plugin/bootstrap-3.3.5/js/transition.js"></script>
+<script src="../plugin/bootstrap-3.3.5/js/file-input.js"></script>
+
+<script src="../plugin/bootstrap-table/js/bootstrap-table.js"  type="text/javascript"></script>
+<script src="../plugin/bootstrap-table/extensions/export/bootstrap-table-export.js"  type="text/javascript"></script>
+<script src="../plugin/bootstrap-table/js/rawgit-tableExport.js"  type="text/javascript"></script>
+<script src="../plugin/bootstrap-table/extensions/editable/bootstrap-table-editable.js"  type="text/javascript"></script>
+<script src="../plugin/bootstrap-table/js/rawgit-editable.js"  type="text/javascript" ></script>
+<script src="../plugin/bootstrap-table/js/bootstrap-table-zh-CN.js"  type="text/javascript" ></script>
+<script src="../plugin/bootstrap-switch-3/js/bootstrap-switch.js" type="text/javascript"></script>
 
 
-</script>
+
+
 
 <script>
 
@@ -261,7 +262,7 @@
         onNodeSelected:function(event,node){
             console.log(node.href);
             if(node.href!==""){
-                panel.load('devices.html');
+                panel.load('devices.php');
             }
         }
     });
@@ -269,7 +270,11 @@
 
 
 </script>
+
+
 <script src="../plugin/app/js/websocket.js"></script>
 <script src="../plugin/app/js/navigation_menu.js"></script>
+
+
 </body>
 </html>

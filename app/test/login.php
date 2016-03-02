@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="import" href="loading.html">
-    <link rel="stylesheet" href="../plugin/app/css/login.css">
+    <link rel="stylesheet" href="../../plugin/app/css/login.css">
 </head>
 <body>
     <form class="form-horizontal">
@@ -35,12 +35,12 @@
 
 <script>
    $("#login").on('click',function(){
-         window.location.href = "../app/index.php";
+         window.location.href = "../index.php";
    });
 
 
     $("#register").on('click',function(){
-        window.location.href = "../app/register.php";
+        window.location.href = "register.php";
     });
 
 </script>

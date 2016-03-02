@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="loading.html">
-</head>
-<body>
-
 <div>
     <div>
         <ul class="nav nav-tabs" id="publish_tab">
@@ -30,18 +22,16 @@
         $(this).addClass('active');
         var title  = $(this).children("a").text();
         if(title==="设备列表"){
-            $panle.load("devices_list.html");
+            $panle.load("devices_list.php");
         }
 
         if(title==="设备配置"){
-           $panle.load("devices_config.html");
+           $panle.load("devices_config.php");
         }
 
     });
 
-    $panle.load("devices_config.html");
+    $panle.load("devices_config.php");
 
 
 </script>
-</body>
-</html>

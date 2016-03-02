@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="table_adduction.html">
-</head>
-<body>
 <div>
     <div id="toolbar">
         <button id="remove" class="btn btn-danger" disabled>
@@ -34,7 +27,7 @@
             <th data-field="cardid">卡号</th>
             <th data-field="phone" >手机号码</th>
             <th data-field="time" >开门时间</th>
-            <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">操作</th>
+            <th data-field="operate" data-align="center" data-formatter="operateFormatter" data-events="operateEvents">操作</th>
         </tr>
         </thead>
     </table>
@@ -112,4 +105,3 @@
     };
 </script>
 <script src="../plugin/app/js/table-load.js"></script>
-</html>

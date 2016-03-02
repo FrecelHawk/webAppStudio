@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="import" href="table_adduction.html">
-</head>
-<body>
 <div>
     <div id="toolbar">
         <button id="remove" class="btn btn-danger" disabled>
@@ -59,19 +52,20 @@
                     <input type="text" class="form-control" name="name" placeholder="姓名">
                 </div>
                 <div class="form-group">
-                    <div class="form-group">
-                        <label>性别</label>
-                        <input type="text" class="form-control" name="gender" placeholder="输入性别">
-                    </div>
+                    <label style="margin-right: 10px;">性别</label>
+                    <form>
+                        <input type="radio" name="gender">男
+                        <input type="radio" name="gender">女
+                    </form>
                 </div>
                 <div class="form-group">
                     <label>家庭住址</label>
-                    <input select-address p="p" c="c" a="a" d="d" ng-model="xxx" name = "homeaddress" placeholder="家庭住址" type="text"
+                    <input select-address ng-model="homeCtrl" name = "homeaddress" placeholder="家庭住址" type="text"
                            class="form-control"/>
                 </div>
                 <div class="form-group">
                     <label>办公地址</label>
-                    <input select-address p="p" c="c" a="a" d="d" ng-model="xxx" name = "officeaddress" placeholder="办公地址" type="text"
+                    <input select-address  ng-model="workCtrl" name = "officeaddress" placeholder="办公地址" type="text"
                            class="form-control"/>
                 </div>
                 <div class="form-group">
@@ -215,8 +209,21 @@
 
 
 </script>
+
 <script src="../plugin/app/js/table-load.js"></script>
-<script src="../plugin/address-plugin/selectAddress2.js" type="text/javascript"></script>
-<script src="../plugin/address-plugin/index.js" type="text/javascript"></script>
-</body>
-</html>
+<script src="../plugin/address-plugin/selectAddress.js" type="text/javascript"></script>
+
+<script>
+    (function() {
+        var app;
+
+        app = angular.module('server_personnel', ['selectAddress']);
+
+        angular.bootstrap($modal, ['server_personnel']);
+
+        $('#modal').find('input[name="officeaddress"]').on('click',function(){
+            $('#area').css('display','block');
+        });
+
+    }).call(this);
+</script>
