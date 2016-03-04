@@ -54,8 +54,8 @@
                 <div class="form-group">
                     <label style="margin-right: 10px;">性别</label>
                     <form>
-                        <input type="radio" name="gender">男
-                        <input type="radio" name="gender">女
+                        <input type="radio" name="gender" value="男">男
+                        <input type="radio" name="gender" value="女">女
                     </form>
                 </div>
                 <div class="form-group">
@@ -170,24 +170,6 @@
     };
 
 
-
-
-    $(function () {
-        // create event
-        $('#addition').click(function () {
-            showModal($(this).text());
-        });
-
-        $modal.find('.submit').click(function () {
-            var row = {};
-            $modal.find('input[name]').each(function () {
-                row[$(this).attr('name')] = $(this).val();
-            });
-            console.log(row);
-            $modal.modal('hide');
-        });
-    });
-
     function showModal(title, row) {
         //row 是提交表单的数据
         row = row || {
@@ -211,6 +193,23 @@
 </script>
 
 <script src="../plugin/app/js/table-load.js"></script>
+<script>
+    $(function () {
+        // create event
+        $('#addition').click(function () {
+            showModal($(this).text());
+        });
+
+        $modal.find('.submit').click(function () {
+            var row = {};
+            $modal.find('input[name]').each(function () {
+                row[$(this).attr('name')] = $(this).val();
+            });
+            console.log(row);
+            $modal.modal('hide');
+        });
+    }).call(this);
+</script>
 <script src="../plugin/address-plugin/selectAddress.js" type="text/javascript"></script>
 
 <script>

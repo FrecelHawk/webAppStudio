@@ -162,6 +162,7 @@
     };
 
     $del_server_type.find('.confirm').on('click',function(){
+        console.log(tmpRow);
         $del_server_type.modal('hide');
         $table.bootstrapTable('remove',{
             field:'id',

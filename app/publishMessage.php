@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../plugin/datetimepicker/css/datetimepicker.css"/>
 
 <div class="table-responsive">
     <ul class="nav nav-tabs"  id="publish_tab">
@@ -63,10 +64,19 @@
             <input type="text" class="form-control" placeholder="输入标题">
         </div>
 
+        <div class="form-group" style="margin-top: 20px;">
+            <div class='input-group date' >
+                <span class="input-group-addon">有效期</span>
+                <input type='text' class="form-control" id='datetimepicker' />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+            </div>
+        </div>
+
         <div class="iput-group" style="margin-top: 20px">
             <textarea rows="7" class="form-control" placeholder="输入内容"></textarea>
         </div>
-
         <div class="input-group-btn" >
             <button class="btn btn-large btn-block btn-primary" type="button" style="margin-top:20px">发布信息</button>
         </div>
@@ -231,5 +241,17 @@
       publishMessage_hide();
       table_show();
 
+
+
 </script>
+<script>
+/*    (function(){
+        $('#datetimepicker').datetimepicker();
+    });*/
+</script>
+
 <script src="../plugin/app/js/table-load.js"></script>
+<script src="../plugin/datetimepicker/js/datetimepicker.js" type="text/javascript"></script>
+<script>
+    $('#datetimepicker').datetimepicker({lang:'ch'});
+</script>

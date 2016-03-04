@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="../plugin/bootstrap-switch-3/css/bootstrap-switch.css"/>
 
 
-
 <script src="../plugin/bootstrap-table/js/bootstrap-table.js"  type="text/javascript"></script>
 <script src="../plugin/bootstrap-table/extensions/export/bootstrap-table-export.js"  type="text/javascript"></script>
 <script src="../plugin/bootstrap-table/js/rawgit-tableExport.js"  type="text/javascript"></script>

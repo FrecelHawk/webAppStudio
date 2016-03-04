@@ -9,8 +9,7 @@ $(function () {
             '../plugin/bootstrap-table/extensions/export/bootstrap-table-export.js',
             '../plugin/bootstrap-table/js/rawgit-tableExport.js',
             '../plugin/bootstrap-table/js/rawgit-editable.js',
-           '../plugin/bootstrap-table/extensions/editable/bootstrap-table-editable.js',
-            '../plugin/bootstrap-switch-3/js/bootstrap-switch.js'
+            '../plugin/bootstrap-table/extensions/editable/bootstrap-table-editable.js'
         ],
         eachSeries = function (arr, iterator, callback) {
             callback = callback || function () {};
