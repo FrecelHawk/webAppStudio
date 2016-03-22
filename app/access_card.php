@@ -1,6 +1,6 @@
 <div>
     <div id="toolbar">
-        <button id="addition" class="btn btn-primary" >
+        <button id="addition" class="btn btn-green" >
             <i class="glyphicon glyphicon-plus"></i> 添加门禁卡
         </button>
     </div>
@@ -54,49 +54,10 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary submit">添加门禁卡</button>
+                <button type="button" class="btn btn-green submit">添加门禁卡</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-</body>
-<script>
-  var $modal = $('#add_access_card');
-
-    $('#addition').on('click',function(){
-        $modal.modal('show');
-    });
-
-    //确认
-    $modal.find('.submit').on('click',function(){
-         var row = {};
-        $modal.find('input[name]').each(function () {
-            row[$(this).attr('name')] = $(this).val();
-        });
-        console.log(row);
-        $modal.modal('hide');
-    });
-
-  function detailFormatter(index,row){
-      var html = [];
-      var title = {
-          'cardnumber': '卡号',
-          'householderPhone': '住户手机',
-          'householderName': '住户姓名',
-      };
-      $.each(row,function(key,value){
-          var tmp = key;
-          if(key==='0') return;
-          if(key==='cardnumber')tmp = title.cardnumber;
-          if(key==='householderPhone')tmp = title.householderPhone;
-          if(key==='householderName') tmp = title.householderName;
-
-          html.push('<p><b>'+tmp+':</b>'+value+'</p>');
-      });
-
-      return html.join('');
-  }
-
-
-</script>
+<script src="../plugin/app/js/access_card.js"></script>
 <script src="../plugin/app/js/table-load.js"></script>

@@ -17,9 +17,6 @@
     <link rel="stylesheet" href="../plugin/bootstrap-table/css/bootstrap-table.css"/>
     <link rel="stylesheet" href="../plugin/bootstrap-table/css/rawgit-bootstrap-editable.css"/>
     <link rel="stylesheet" href="../plugin/bootstrap-switch-3/css/bootstrap-switch.css"/>
-
-
-
 </head>
 <?php
    require 'header.php'
@@ -32,12 +29,7 @@
         <div class="span3">
             <!--Sidebar content-->
             <div class="panel panel-default" style="height: 740px;">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        分类
-                    </h3>
-                </div>
-                <span class="btn btn-primary btn-file" style="margin: 10px;">
+                <span class="btn  btn-file btn-green" style="margin: 10px;">
                    <i class="glyphicon glyphicon-folder-open" href="#"></i> 导入配置 <input type="file">
                 </span>
                 <div class="panel-body">
@@ -47,7 +39,7 @@
         </div>
         <div class="span9">
             <!--navigation menu-->
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default navbar-offcanvas-fade ">
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,7 +58,8 @@
                             <ul id="meun" class="nav navbar-nav" >
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">消息管理 <span class="caret"></span>  <span class="badge" id="msg_count"></span></a>
-                                    <ul class="dropdown-menu">
+                                    <div class="nav-line"></div>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                                         <li><a href="#" id="warningMessage">警报信息 <span class="badge" id="alarm_count"></span> </a></li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="#" id="sendMessage">发布信息</a></li>
@@ -74,16 +67,14 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">设备管理 <span class="caret"></span></a>
+                                    <div class="nav-line"></div>
                                     <ul class="dropdown-menu">
                                         <li><a href="#" id="devices">设备配置</a></li>
-<!--                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">设备重启</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">设备升级</a></li>-->
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">服务管理 <span class="caret"></span></a>
+                                    <div class="nav-line"></div>
                                     <ul class="dropdown-menu">
                                         <li><a href="#" id="server_personnel">服务人员</a></li>
                                         <li role="separator" class="divider"></li>
@@ -96,14 +87,16 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">监控管理 <span class="caret"></span></a>
+                                    <div class="nav-line"></div>
                                     <ul class="dropdown-menu">
                                         <li><a href="#" id="monitor">摄像头配置</a></li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="#" id="sendMessage">实时监控</a></li>
+                                        <li><a href="#" id="realtime_monitor">实时监控</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">记录查询 <span class="caret"></span></a>
+                                    <div class="nav-line"></div>
                                     <ul class="dropdown-menu">
                                         <li><a href="#" id="access_record">门禁记录</a></li>
                                         <li role="separator" class="divider"></li>
@@ -113,6 +106,7 @@
 
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账号管理 <span class="caret"></span></a>
+                                    <div class="nav-line"></div>
                                     <ul class="dropdown-menu">
                                         <li><a href="#" id="account_info">账号信息</a></li>
                                     </ul>
@@ -170,88 +164,11 @@
 <script src="../plugin/bootstrap-table/js/rawgit-editable.js"  type="text/javascript" ></script>
 <script src="../plugin/bootstrap-table/js/bootstrap-table-zh-CN.js"  type="text/javascript" ></script>
 <script src="../plugin/bootstrap-switch-3/js/bootstrap-switch.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../plugin/datetimepicker/css/datetimepicker.css"/>
 
 
 
-
-
-<script>
-
-    var defaultData = [
-        {
-            text: '二期',
-            href: '#parent1',
-            tags: ['4'],
-            nodes: [
-                {
-                    text: '一区',
-                    href: '#child1',
-                    tags: ['2'],
-                    nodes: [
-                        {
-                            text: '1栋',
-                            href: '#grandchild1',
-                            tags: ['1'],
-                            nodes: [{
-                                text: '1单元',
-                                href: '#unit',
-                                tags: [1],
-                                nodes: [{
-                                    text: '2层',
-                                    href: '#layer',
-                                    tags: [1],
-                                    nodes: [{
-                                        text: '101室',
-                                        href: '#room',
-                                        tags: [0],
-                                        nodes:[{
-                                            text:'1房号',
-                                            href:'#room',
-                                            targs:[0]
-                                        }]
-                                    }]
-                                }]
-                            }]
-                        },
-                        {
-                            text: '2栋',
-                            href: '#grandchild2',
-                            tags: ['0']
-                        }
-                    ]
-                },
-                {
-                    text: '一区中心机 <span class="glyphicon glyphicon-registration-mark"></span>',
-                    href: '#child2',
-                    tags: ['0']
-                }
-            ]
-        }
-    ];
-
-    var $checkableTree = $('#treeview-checkable').treeview({
-        data: defaultData,
-        showIcon: true,
-        showCheckbox: false,
-        onNodeChecked: function (event, node) {
-            $('#checkable-output').prepend('<p>' + node.text + ' was checked</p>');
-        },
-        onNodeUnchecked: function (event, node) {
-            $('#checkable-output').prepend('<p>' + node.text + ' was unchecked</p>');
-        },
-        onNodeSelected:function(event,node){
-            console.log(node.href);
-            if(node.href!==""){
-                panel.load('devices.php');
-            }
-        }
-    });
-
-
-
-</script>
-
-
+<script src="../plugin/app/js/main.js"></script>
 <script src="../plugin/app/js/websocket.js"></script>
 <script src="../plugin/app/js/navigation_menu.js"></script>
 

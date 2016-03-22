@@ -1,48 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="import" href="../table_adduction.php">
-<!--    <link rel="stylesheet" href="../../plugin/bootstrap-3.3.5/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../../plugin/test/jquery.datetimepicker.css"/>-->
-<!--    <link rel="stylesheet" href="../plugin/bootstrap-3.3.5/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../plugin/bootstrap-switch-3/css/bootstrap-switch.css"/>
-    <link rel="stylesheet" href="../plugin/bootstrap-switch-3/css/highlight.css"/>
+    <link rel="stylesheet" href="../../plugin/app/css/navigation.css">
 
-    <script src="../plugin/jquery-2.1.1/jquery.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-3.3.5/js/bootstrap.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-switch-3/js/highlight.js"  type="text/javascript"></script>
-    <script src="../plugin/bootstrap-switch-3/js/bootstrap-switch.js"  type="text/javascript"></script>-->
-<!--    <script src="../../plugin/jquery-2.1.1/jquery.js"  type="text/javascript"></script>
-    <script src="../../plugin/bootstrap-3.3.5/js/bootstrap.js"  type="text/javascript"></script>
-    <script src="../../plugin/test/jquery.datetimepicker.js" type="text/javascript"></script>-->
+    <style>
+        .realtime_container{
+            margin: 10px;
+            padding: 10px;;
+        }
+
+        .realtime_btn {
+            margin-left: 10px;;
+        }
+    </style>
+
+
 </head>
-<!--<div class='input-group date' id="datetimepicker"  style="margin-top: 20px">
-    <input type='text' class="form-control"  />
-    <span class="input-group-addon" >
-        <span class="glyphicon glyphicon-calendar"></span>
-    </span>
-</div>-->
 
-<div class="form-group">
-    <label>办公地址</label>
-    <input select-address p="p" c="c" a="a" d="d" ng-model="xxx" name = "address" placeholder="办公地址" type="text"
-           class="form-control"/>
-</div>
-<h1>Hello {{ name }}</h1>
-
-<script src="../../plugin/address-plugin/selectAddress_notAddress.js" type="text/javascript"></script>
-<script>
-    (function() {
-        var app;
-
-        app = angular.module('app', ['selectAddress']);
-
-        console.log(document);
-        angular.bootstrap($('.form-group'), ['app']);
-
-    }).call(this);
-
-</script>
-
+    <div id="test" class="container">
+    </div>
 </html>
+<script>
+
+    var data = [{'id':'1','address':'192.168.1.1'},{'id':'2','address':'192.168.1.2'},{'id':'3','address':'192.168.1.3'},
+        {'id': '4', 'address': '192.168.1.4'}, {'id': '5', 'address': '192.168.1.5'}, {
+            'id': '6',
+            'address': '192.168.1.6'
+        }, {'id': '7', 'address': '192.168.1.7'}, {'id': '5', 'address': '192.168.1.5'}, {
+            'id': '6',
+            'address': '192.168.1.6'
+        }, {'id': '7', 'address': '192.168.1.7'},
+        {'id':'5','address':'192.168.1.5'},{'id':'6','address':'192.168.1.6'},{'id':'7','address':'192.168.1.7'}];
+
+    function init(){
+        var realtime_container =$( '<div class="realtime_container"></div>');
+        for(var i=0;i<data.length;i++){
+            if((i%5)==0){
+                realtime_container = $( '<div class="realtime_container"></div>');
+                $('#test').append(realtime_container);
+            }
+            realtime_container.append('<button class="btn primary realtime_btn">'+data[i].address+'</button>');
+        }
+        $('#test').append(realtime_container);
+    }
+    init();
+</script>

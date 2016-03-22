@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="../plugin/app/css/main.css"/>
 
 
-
 <script src="../plugin/jquery-2.1.1/jquery.js"></script>
 <script src="../plugin/less/less.js"></script>
 <script src="../plugin/angularjs/js/angular.js"></script>

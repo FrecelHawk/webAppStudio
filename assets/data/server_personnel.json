@@ -10,6 +10,9 @@
   "mobile":"18012345621",
   "servicetypeid":121,
   "star":1,
+  "province":"广东",
+  "city":"珠海",
+  "area":"香洲区",
   "description":"XXXXXX"
  },{
      "id":2,
@@ -22,6 +25,9 @@
      "mobile":"18012345621",
      "servicetypeid":122,
      "star":1,
+     "province":"广东",
+     "city":"珠海",
+     "area":"香洲区",
      "description":"XXXXXX"
     },{
         "id":3,
@@ -34,6 +40,9 @@
         "mobile":"18012345621",
         "servicetypeid":121,
         "star":1,
+          "province":"广东",
+          "city":"珠海",
+          "area":"香洲区",
         "description":"XXXXXX"
        },{
            "id":4,
@@ -46,6 +55,9 @@
            "mobile":"18012345621",
            "servicetypeid":121,
            "star":1,
+            "province":"广东",
+            "city":"珠海",
+             "area":"香洲区",
            "description":"XXXXXX"
           }
 ]
